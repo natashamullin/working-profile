@@ -70,7 +70,7 @@ padding: 20px;
     display: flex;
     justify-content: space-around;
     padding: 10px;
-    margin: 1opx;
+    margin: 10px;
   }
 
   .flex1 {border: solid 0 2px 0 0;}
@@ -79,13 +79,9 @@ padding: 20px;
 
    .grid-container{
     display: grid;
-    grid-template-columns: 1fr 2fr 2fr 2fr;
-    grid-template-rows: 2fr 2fr 2fr 2fr;
+    grid-template-columns: repeat (auto-fill, minmax(240px, 1fr));
+    grid-template-rows: 100px 100px 100px 100px;
   grid-gap: 10px;
-  
-
-    
-    
   }
 
   .grid-item-1 {
@@ -93,31 +89,59 @@ padding: 20px;
     grid-row-end:5 ;
     grid-column: 1;
     margin: 0;
-
-  
+    background-size: cover;
+background-position: center; 
+    column-span: all;
   }
 
+  .grid-item-2{ 
+    background-size: cover;
+    background-position: bottom;
+  }
+  
   .grid-item-3{
     grid-row-start: 1;
     grid-row-end: 3;
     grid-column-start:2;
     grid-column-end: 4; 
   background-color: thistle;  
-background-size: 90%;
-background-position: center; }
+background-size: cover;
+background-position: center; 
+}
 
 
   .grid-item-4 {
     grid-row-end: 5;
     grid-row-start: 3;
     grid-column-start: 3;
-    background-size: ;
+    background-size: cover;
+    background-position: center;  
   }
 
+  
   .grid-item-5{
     grid-column-start: 4;
-    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: none;
+    background-size: cover;
+    background-position: center;
   }
+
+  .grid-item-6 {
+    background-size: contain;
+  }
+  .grid-item-4:hover, .grid-item-5:hover, .grid-item-3:hover, .grid-item-2:hover { 
+  transform: scale(1.2);
+
+}
+
+.img-box{
+  float:left ;
+  background-color: ivory;
+  font-family: sans-serif;
+  color: black;
+}
+ 
 
 
 
