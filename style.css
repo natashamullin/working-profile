@@ -61,7 +61,7 @@ padding: 20px;
 
   p {background-color: whitesmoke;
     font-family: verdana;
-    font-size: 15px;
+    font-size: 18px;
     left: 400px;
   right: 450px
   }
@@ -128,9 +128,10 @@ background-position: center;
   }
 
   .grid-item-6 {
-    background-size: contain;
+    background-size: cover;
+    background-position: center;
   }
-  .grid-item-4:hover, .grid-item-5:hover, .grid-item-3:hover, .grid-item-2:hover { 
+  .grid-item-4:hover, .grid-item-5:hover, .grid-item-3:hover, .grid-item-2:hover, .grid-item-6:hover { 
   transform: scale(1.2);
 
 }
@@ -142,13 +143,6 @@ background-position: center;
   color: black;
 }
  
-
-
-
-
-
-
-
   /* contact me*/
  .grid-item3 {
    display: flex;
@@ -160,6 +154,7 @@ background-position: center;
   justify-content: space-around;
   margin: 20px;
   padding: 20px;
+  font-size: 18px;
   
 }
  
